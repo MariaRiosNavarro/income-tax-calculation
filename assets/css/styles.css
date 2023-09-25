@@ -88,6 +88,16 @@ input {
   text-align: center;
 }
 
+.alert {
+  background-color: red;
+  color: beige;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  margin-top: 2rem;
+}
+
 /* display none */
 
 .taxable-income2 {

@@ -26,9 +26,15 @@ const displayChoice = () => {
 // -----------------MAIN FUNCTION
 
 const calculateTax = () => {
+  // Add error handling
+
+  if (Number(incomeInput1.value) === 0) {
+    outputContainer.innerHTML = `<p class="alert">Bitte geben Sie ein gültige Wert</p>`;
+    return;
+  }
+
   // asign to year the year input value
   let year = Number(yearInput.value);
-
   //Add income2 if we habe 2 incomes
   let income = 0; //result Income
   let income1 = Number(incomeInput1.value);
@@ -41,13 +47,6 @@ const calculateTax = () => {
     // if we have 2 income
     income = (income1 + income2) / 2;
   }
-
-  console.log({ income2 });
-
-  console.log({ year });
-  console.log(typeof year);
-  console.log({ income });
-  console.log(typeof income);
 
   // -------------------Help Variables for all years--------------
   // Give value 0 to be sure values are Numbers
