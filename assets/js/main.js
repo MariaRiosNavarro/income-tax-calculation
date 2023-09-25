@@ -156,9 +156,9 @@ const calculateTax = () => {
   let roundTax = tax.toFixed(2); //-round only to output
 
   if (income2 === 0) {
-    outputContainer.innerHTML = `<h3>Für das Jahr ${year} und das Einkommen von ${income} ist die  Einkommen­steuer </h3><p><span>€</span> ${roundTax}<p> <br> `;
+    outputContainer.innerHTML = `<h3>Für das Jahr ${year} und das Einkommen von ${income} ist die  Einkommen­steuer:</h3><p class="output"><span class="big">€</span> ${roundTax}<p> <br> `;
   } else {
-    outputContainer.innerHTML = `<h3>Für das Jahr ${year} und die Einkommen von ${income1} und die Einkommen von ${income2} ist die Einkommen­steuer </h3><p><span>€</span> ${roundTax}<p> <br> `;
+    outputContainer.innerHTML = `<h3>Für das Jahr ${year} und die Einkommen von ${income1} und die Einkommen von ${income2} ist die Einkommen­steuer:</h3><p class="output"><span class="big">€</span> ${roundTax}<p> <br> `;
   }
 };
 
