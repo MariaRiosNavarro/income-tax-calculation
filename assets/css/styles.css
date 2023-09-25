@@ -25,6 +25,7 @@ form {
   background-color: lightgray;
   padding: 2rem;
   border-radius: 8px;
+  height: 75%;
 }
 
 h1 {
@@ -39,6 +40,8 @@ label {
 .wrapper {
   display: inline-flex;
   align-items: center;
+  gap: 0.5rem;
+  margin: 1rem;
 }
 
 input[type="submit"] {
@@ -60,4 +63,10 @@ input {
   padding: 0.3rem 0.5rem;
   border-radius: 5px;
   border: none;
+}
+
+/* display none */
+
+.taxable-income2 {
+  display: none;
 }

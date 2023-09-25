@@ -17,26 +17,28 @@
           <option value="2021">2020</option>
           <option value="2022">2020</option>
         </select>
-        <label for="taxable-income">Zu versteuerndes Einkommen (zvE)</label>
-        <span>€</span>
-        <input
-          type="number"
-          step="0.01"
-          id="taxable-income1"
-          placeholder="person 1"
-          data-js="taxable-income"
-        />
-
-        <label for="taxable-income2">Zu versteuerndes Einkommen (zvE)</label>
-        <span>€</span>
-        <input
-          type="number"
-          step="0.01"
-          id="taxable-income2"
-          placeholder="person 2"
-          data-js="taxable-income2"
-        />
-
+        <article>
+          <label for="taxable-income1">Zu versteuerndes Einkommen (zvE)</label>
+          <span>€</span>
+          <input
+            type="number"
+            step="0.01"
+            id="taxable-income1"
+            placeholder="person 1"
+            data-js="taxable-income1"
+          />
+        </article>
+        <article class="taxable-income2" data-js="income2-wrapper">
+          <label for="taxable-income2">Zu versteuerndes Einkommen (zvE)</label>
+          <span>€</span>
+          <input
+            type="number"
+            step="0.01"
+            id="taxable-income2"
+            placeholder="person 2"
+            data-js="taxable-income2"
+          />
+        </article>
         <h3>Einzel oder Zusammen</h3>
         <div class="wrapper">
           <input
@@ -46,6 +48,7 @@
             checked
             name="people"
             data-js="one-person"
+            onclick="displayChoice()"
           />
           <label for="one-person">Einzel</label>
         </div>
@@ -56,10 +59,12 @@
             value="two-people"
             name="people"
             data-js="two-people"
+            onclick="displayChoice()"
           />
           <label for="two-people">Zusammen</label>
         </div>
         <input type="submit" value="Rechnen" />
+        <div class="output-container" data-js="output-container"></div>
       </form>
     </main>
   </body>
