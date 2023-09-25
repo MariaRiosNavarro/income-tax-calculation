@@ -2,6 +2,13 @@
 
 # [Deployment](https://mariariosnavarro.github.io/income-tax-calculation/)
 
+The formulas I have used are here:
+
+- [2023](https://www.finanz-tools.de/einkommensteuer/berechnung-formeln/2023)
+- [2022](https://www.finanz-tools.de/einkommensteuer/berechnung-formeln/2022)
+- [2021](https://link-url-here.org)
+- [2022](https://link-url-here.org)
+
 <div>
 
 <img src="./assets/img/readme1.png" width="400px">
@@ -25,6 +32,8 @@
 <img src="./assets/img/readme11.png" width="250px">
 
 </div>
+
+##
 
 # TEST
 

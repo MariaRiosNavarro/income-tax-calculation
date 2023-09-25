@@ -163,6 +163,12 @@ const calculateTax = () => {
     roundTax = (tax * 2).toFixed(2); //-round only to output
     outputContainer.innerHTML = `<h3>Für das Jahr ${year} und die Einkommen von ${income1} und die Einkommen von ${income2} ist die Einkommen­steuer:</h3><p class="output"><span class="big">€</span> ${roundTax}<p>`;
   }
+
+  // Remove alert if click inside
+
+  incomeInput1.addEventListener("click", () => {
+    outputContainer.innerHTML = "";
+  });
 };
 
 //  #test values
