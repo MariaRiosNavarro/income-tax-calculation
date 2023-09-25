@@ -25,7 +25,7 @@ form {
   background-color: lightgray;
   padding: 2rem;
   border-radius: 8px;
-  height: 75%;
+  height: auto;
   position: relative;
 }
 
@@ -74,10 +74,18 @@ input {
   margin-top: 2rem;
 }
 
+.output-container {
+  height: 8rem;
+}
+
 .info {
   position: absolute;
   bottom: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .output,
