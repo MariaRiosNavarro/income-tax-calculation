@@ -152,12 +152,16 @@ const calculateTax = () => {
     console.log("case5");
   }
 
-  let roundTax = tax.toFixed(2); //-round only to output
+  let roundTax = 0;
 
   if (income2 === 0) {
+    // only 1 person
+    roundTax = tax.toFixed(2); //-round only to output
     outputContainer.innerHTML = `<h3>Für das Jahr ${year} und das Einkommen von ${income} ist die  Einkommen­steuer:</h3><p class="output"><span class="big">€</span> ${roundTax}<p> <br> `;
   } else {
+    // 2 person
     outputContainer.innerHTML = `<h3>Für das Jahr ${year} und die Einkommen von ${income1} und die Einkommen von ${income2} ist die Einkommen­steuer:</h3><p class="output"><span class="big">€</span> ${roundTax}<p> <br> `;
+    roundTax = (tax * 2).toFixed(2); //-round only to output
   }
 };
 
