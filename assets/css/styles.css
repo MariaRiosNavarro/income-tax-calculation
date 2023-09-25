@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Helvetica, Arial, sans-serif, Impact;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  height: 100vh;
+  width: 100vw;
+}
+
+form {
+  width: 70%;
+  background-color: lightgray;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+label {
+  display: block;
+}
+
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+}
+
+label,
+h3,
+span {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+input {
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  border: none;
+}

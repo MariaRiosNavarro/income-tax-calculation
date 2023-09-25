@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="./assets/js/main.js" defer></script>
+    <title>Income Tax Calculator</title>
+  </head>
+  <body>
+    <main>
+      <form onsubmit="calculateTax()">
+        <h1>Einkommensteuer-Berechnungs-App</h1>
+        <label for="year">Jahr</label>
+        <select name="year" id="year" data-js="year">
+          <option value="2020">2020</option>
+          <option value="2021">2020</option>
+          <option value="2022">2020</option>
+        </select>
+        <label for="taxable-income">Zu versteuerndes Einkommen (zvE)</label>
+        <span>€</span>
+        <input
+          type="number"
+          step="0.01"
+          id="taxable-income1"
+          placeholder="person 1"
+          data-js="taxable-income"
+        />
+
+        <label for="taxable-income2">Zu versteuerndes Einkommen (zvE)</label>
+        <span>€</span>
+        <input
+          type="number"
+          step="0.01"
+          id="taxable-income2"
+          placeholder="person 2"
+          data-js="taxable-income2"
+        />
+
+        <h3>Einzel oder Zusammen</h3>
+        <div class="wrapper">
+          <input
+            type="radio"
+            value="one-person"
+            id="one-person"
+            checked
+            name="people"
+            data-js="one-person"
+          />
+          <label for="one-person">Einzel</label>
+        </div>
+        <div class="wrapper">
+          <input
+            type="radio"
+            id="two-people"
+            value="two-people"
+            name="people"
+            data-js="two-people"
+          />
+          <label for="two-people">Zusammen</label>
+        </div>
+        <input type="submit" value="Rechnen" />
+      </form>
+    </main>
+  </body>
+</html>
