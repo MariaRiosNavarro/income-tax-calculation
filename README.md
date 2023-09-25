@@ -1,6 +1,30 @@
 # income-tax-calculation
 
+[Deployment]()
+
+<div>
+
+<img src="./assets/img/readme1.png" width="300px">
+</div>
+
+<div>
+
+<img src="./assets/img/readme2.png" width="300px">
+<img src="./assets/img/readme3.png" width="300px">
+<img src="./assets/img/readme4.png" width="300px">
+<img src="./assets/img/readme5.png" width="300px">
+<img src="./assets/img/readme6.png" width="300px">
+<img src="./assets/img/readme7.png" width="300px">
+
+</div>
+
+<div>
+
+</div>
+
 # TEST
+
+Values are rounded in the Output, here the exact Values to test.
 
 # 2023
 
