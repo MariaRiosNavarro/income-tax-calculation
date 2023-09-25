@@ -15,19 +15,23 @@ const income2Wrapper = document.querySelector('[data-js="income2-wrapper"]');
 // 4. Function for Visibility of second input if radio choice 1 is false:
 
 const displayChoice = () => {
+  // remove old values
+  outputContainer.innerHTML = "";
   // 3.1 Save Boolean of the radio choice
   let booleanRadio = radioChoiceInput1.checked;
-  //3.2 Display the options of the 2nd input Container or not
+  //3.2 Display the options of the 2nd input Container or not. Remove the value of 2 if we change to 1 value
   booleanRadio
-    ? (income2Wrapper.style.display = "none")
+    ? (income2Wrapper.style.display = "none") && (incomeInput2.value = "")
     : (income2Wrapper.style.display = "block");
+
+  console.log(incomeInput2.value);
 };
 
 // -----------------MAIN FUNCTION
 
 const calculateTax = () => {
   // Add error handling
-
+  console.log("i2 value", incomeInput2.value);
   if (Number(incomeInput1.value) === 0) {
     outputContainer.innerHTML = `<p class="alert">Bitte geben Sie ein gültige Wert</p>`;
     return;
