@@ -9,20 +9,20 @@
 
 <div>
 
-<img src="./assets/img/readme2.png" width="200px">
-<img src="./assets/img/readme3.png" width="200px">
-<img src="./assets/img/readme4.png" width="200px">
-<img src="./assets/img/readme5.png" width="200px">
-<img src="./assets/img/readme6.png" width="200px">
+<img src="./assets/img/readme2.png" width="250px">
+<img src="./assets/img/readme3.png" width="250px">
+<img src="./assets/img/readme4.png" width="250px">
+<img src="./assets/img/readme5.png" width="250px">
+<img src="./assets/img/readme6.png" width="250px">
 
 </div>
 
 <div>
-<img src="./assets/img/readme7.png" width="200px">
-<img src="./assets/img/readme8.png" width="200px">
-<img src="./assets/img/readme9.png" width="200px">
-<img src="./assets/img/readme10.png" width="200px">
-<img src="./assets/img/readme11.png" width="200px">
+<img src="./assets/img/readme7.png" width="250px">
+<img src="./assets/img/readme8.png" width="250px">
+<img src="./assets/img/readme9.png" width="250px">
+<img src="./assets/img/readme10.png" width="250px">
+<img src="./assets/img/readme11.png" width="250px">
 
 </div>
 
