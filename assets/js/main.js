@@ -154,6 +154,8 @@ const calculateTax = () => {
     console.log("Error");
   }
 
+  // Output and Round
+
   let roundTax = 0;
 
   if (income2 === 0) {
