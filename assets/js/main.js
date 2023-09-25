@@ -23,7 +23,7 @@ const displayChoice = () => {
     : (income2Wrapper.style.display = "block");
 };
 
-// -------------------Help FUNCTIONs for all years--------------
+// -------------------Help Variables for all years--------------
 
 let tax, income, y, z;
 let incomeA, incomeB, incomeC, incomeD;
@@ -52,54 +52,59 @@ if (income <= incomeA) {
 
 // --- Values for all the years
 
-// -----------------------2023
-
-if (year === 2023) {
-  incomeA = 10908;
-  incomeB = 15999;
-  incomeC = 62809;
-  incomeD = 277825;
-  // -
-  A = 979.18;
-  B = 192.59;
-  C = 966.53;
-  D = 9972.98;
-  E = 18307.73;
-} else if (year === 2022) {
-  incomeA = 10347;
-  incomeB = 14926;
-  incomeC = 58596;
-  incomeD = 277825;
-  // -
-  A = 1088.67;
-  B = 206.43;
-  C = 869.32;
-  D = 9336.45;
-  E = 17671.2;
-} else if (year === 2021) {
-  incomeA = 9744;
-  incomeB = 14753;
-  incomeC = 57918;
-  incomeD = 274612;
-  // -
-  A = 995.21;
-  B = 208.85;
-  C = 950.96;
-  D = 9136.63;
-  E = 17374.99;
-} else if (year === 2020) {
-  incomeA = 9408;
-  incomeB = 14532;
-  incomeC = 57051;
-  incomeD = 270500;
-  // -
-  A = 972.87;
-  B = 212.02;
-  C = 972.79;
-  D = 8963.74;
-  E = 17078.74;
+switch (true) {
+  // -----------------------2023
+  case year === 2023:
+    incomeA = 10908;
+    incomeB = 15999;
+    incomeC = 62809;
+    incomeD = 277825;
+    // -
+    A = 979.18;
+    B = 192.59;
+    C = 966.53;
+    D = 9972.98;
+    E = 18307.73;
+    break;
+  // -----------------------2020
+  case year === 2022:
+    incomeA = 10347;
+    incomeB = 14926;
+    incomeC = 58596;
+    incomeD = 277825;
+    // -
+    A = 1088.67;
+    B = 206.43;
+    C = 869.32;
+    D = 9336.45;
+    E = 17671.2;
+    break;
+  // -----------------------2021
+  case year === 2021:
+    incomeA = 9744;
+    incomeB = 14753;
+    incomeC = 57918;
+    incomeD = 274612;
+    // -
+    A = 995.21;
+    B = 208.85;
+    C = 950.96;
+    D = 9136.63;
+    E = 17374.99;
+    break;
+  // -----------------------2020
+  case year === 2020:
+    incomeA = 9408;
+    incomeB = 14532;
+    incomeC = 57051;
+    incomeD = 270500;
+    // -
+    A = 972.87;
+    B = 212.02;
+    C = 972.79;
+    D = 8963.74;
+    E = 17078.74;
+    break;
+  default:
+    console.log("No year has been selected ");
 }
-
-// -----------------------2022
-// -----------------------2021
-// -----------------------2020
