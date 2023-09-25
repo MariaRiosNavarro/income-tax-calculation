@@ -27,9 +27,22 @@ const displayChoice = () => {
 
 const calculateTax = () => {
   // asign to year the year input value
-  // asign to income variable
   let year = Number(yearInput.value);
-  let income = Number(incomeInput1.value);
+
+  //Add income2 if we habe 2 incomes
+  let income = 0; //result Income
+  let income1 = Number(incomeInput1.value);
+  let income2 = Number(incomeInput2.value);
+
+  if (income2 === 0) {
+    // if we have only 1 income
+    income = income1;
+  } else {
+    // if we have 2 income
+    income = (income1 + income2) / 2;
+  }
+
+  console.log({ income2 });
 
   console.log({ year });
   console.log(typeof year);
@@ -140,12 +153,13 @@ const calculateTax = () => {
     console.log("case5");
   }
 
-  //   ---------Calculate
-
-  console.log({ tax });
   let roundTax = tax.toFixed(2); //-round only to output
-  outputContainer.innerHTML = `<h3>Für das Jahr ${year} und das Einkommen von ${income} ist die  Einkommen­steuer </h3><p><span>€</span> ${roundTax}<p> <br> <p>
-  Die Formel zur Berechnung der Einkommensteuer in ${year} finden Sie hier: <a href="https://www.finanz-tools.de/einkommensteuer/berechnung-formeln/2023" target="_blank">2023</a>, <a href="https://www.finanz-tools.de/einkommensteuer/berechnung-formeln/2022" target="_blank">2022</a>, <a href="https://www.finanz-tools.de/einkommensteuer/berechnung-formeln/2021" target="_blank">2021</a>, <a href="https://www.finanz-tools.de/einkommensteuer/berechnung-formeln/2020 target="_blank"" >2020</a></p>`;
+
+  if (income2 === 0) {
+    outputContainer.innerHTML = `<h3>Für das Jahr ${year} und das Einkommen von ${income} ist die  Einkommen­steuer </h3><p><span>€</span> ${roundTax}<p> <br> `;
+  } else {
+    outputContainer.innerHTML = `<h3>Für das Jahr ${year} und die Einkommen von ${income1} und die Einkommen von ${income2} ist die Einkommen­steuer </h3><p><span>€</span> ${roundTax}<p> <br> `;
+  }
 };
 
 //  #test values

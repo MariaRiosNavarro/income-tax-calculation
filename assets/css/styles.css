@@ -26,6 +26,7 @@ form {
   padding: 2rem;
   border-radius: 8px;
   height: 75%;
+  position: relative;
 }
 
 h1 {
@@ -63,6 +64,12 @@ input {
   padding: 0.3rem 0.5rem;
   border-radius: 5px;
   border: none;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
 }
 
 /* display none */
