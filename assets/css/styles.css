@@ -44,6 +44,8 @@ label {
 input[type="submit"] {
   display: block;
   width: 100%;
+  background-color: blue;
+  color: antiquewhite;
 }
 
 label,
