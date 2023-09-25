@@ -117,27 +117,35 @@ const calculateTax = () => {
   // case 1
   if (income <= incomeA) {
     tax = 0;
+    console.log("case1");
     // case 2
-  } else if (incomeA + 1 <= income <= incomeB) {
+  } else if (incomeA + 1 <= income && income <= incomeB) {
     y = (income - incomeA) / 10000;
     tax = (A * y + 1400) * y;
-    // case 3
-  } else if (incomeB + 1 <= income <= incomeC) {
+    console.log("case2");
+    // -case 3
+  } else if (incomeB + 1 <= income && income <= incomeC) {
     z = (income - incomeB) / 10000;
     tax = (B * z + 2397) * z + C;
+    console.log("case3");
     // case 4
-  } else if (incomeC + 1 <= income <= incomeD) {
-    tax = 0.42 * income - D;
+  } else if (incomeC + 1 <= income && income <= incomeD) {
+    let taxStep = 0.42 * income;
+    tax = taxStep - D;
+    console.log("case4");
     // case 5
   } else if (income >= incomeD + 1) {
-    tax = 0.45 * income - E;
+    let taxStep = 0.45 * income;
+    tax = taxStep - E;
+    console.log("case5");
   }
 
   //   ---------Calculate
 
   console.log({ tax });
   let roundTax = tax.toFixed(2); //-round only to output
-  outputContainer.innerHTML = `<h3>Für das Jahr ${year} und das Einkommen von ${income} sollen sie </h3><p><span>€</span> ${roundTax} bezahlen<p>`;
+  outputContainer.innerHTML = `<h3>Für das Jahr ${year} und das Einkommen von ${income} ist die  Einkommen­steuer </h3><p><span>€</span> ${roundTax}<p> <br> <p>
+  Die Formel zur Berechnung der Einkommensteuer in ${year} finden Sie hier: <a href="https://www.finanz-tools.de/einkommensteuer/berechnung-formeln/2023" target="_blank">2023</a>, <a href="https://www.finanz-tools.de/einkommensteuer/berechnung-formeln/2022" target="_blank">2022</a>, <a href="https://www.finanz-tools.de/einkommensteuer/berechnung-formeln/2021" target="_blank">2021</a>, <a href="https://www.finanz-tools.de/einkommensteuer/berechnung-formeln/2020 target="_blank"" >2020</a></p>`;
 };
 
 //  #test values
@@ -156,7 +164,7 @@ const calculateTax = () => {
 // tax = (192.59*z + 2397)*z + 966.53 =3280.10226813
 
 // -case4: 75000/ year 2023
-// tax = 0.42 * 75000 -9972.98 = 13192.27
+// tax = 0.42 * 75000 -9972.98 = 21527.02
 
 // -case5: 300000/ year 2023
 // tax = 0.45 * 300000 -18307.73 = 116692.27
