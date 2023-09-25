@@ -150,6 +150,8 @@ const calculateTax = () => {
     let taxStep = 0.45 * income;
     tax = taxStep - E;
     console.log("case5");
+  } else {
+    console.log("Error");
   }
 
   let roundTax = 0;
