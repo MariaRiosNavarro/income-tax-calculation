@@ -74,6 +74,7 @@ const calculateTax = () => {
   // console.log(typeof year);
 
   // ----------------------------------Year Choice--- Values for all the years
+  // !!dont forget->year is a Number, also case is without "", if we use a String, we must use " " in case!! If we use yearInput.value (string, we use "")
   switch (year) {
     case 2023:
       // -----------------------2023
