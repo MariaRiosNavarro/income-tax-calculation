@@ -25,7 +25,6 @@ form {
   background-color: lightgray;
   padding: 2rem;
   border-radius: 8px;
-  height: auto;
   position: relative;
 }
 
@@ -75,7 +74,7 @@ input {
 }
 
 .output-container {
-  height: 8rem;
+  height: 15rem;
 }
 
 .info {
