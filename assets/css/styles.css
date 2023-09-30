@@ -18,6 +18,7 @@ main {
   background-color: gray;
   height: 100vh;
   width: 100vw;
+  min-width: 290px;
 }
 
 form {
@@ -26,7 +27,9 @@ form {
   padding: 2rem;
   border-radius: 8px;
   height: auto;
+  min-height: 450px;
   position: relative;
+  min-width: 290px;
 }
 
 h1 {
@@ -75,7 +78,8 @@ input {
 }
 
 .output-container {
-  height: 8rem;
+  min-height: 8rem;
+  height: auto;
 }
 
 .info {
